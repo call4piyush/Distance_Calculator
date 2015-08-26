@@ -1,0 +1,27 @@
+
+      #map_canvas {
+        height: 80%;
+      }
+	  
+	  .right {
+    position: absolute;
+    right: 0px;
+    border:3px solid #8AC007;
+    padding: 10px;
+	}
+	
+	.left {
+    float: left;
+    width: 73%;
+    height: 650px;
+    border:3px solid #8AC007;
+    padding: 10px;
+	}
+	
+	.bottom{
+	clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+	}

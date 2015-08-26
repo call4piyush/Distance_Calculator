@@ -1,0 +1,39 @@
+<html>
+  <head>
+  <meta charset="ISO-8859-1">
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script language="javascript" type="text/javascript" src="Map.js"></script>
+  <title>Distance Calculator</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head>
+  
+  <body onload="initialize()">
+    <div class="right"> 
+	<table><tr>
+        <td>Start: </td>
+        <td><input type="text" name="start" id="start" required="true" /></td></tr>
+        <tr><td>End:</td>
+        <td><input type="text" name="end" id="end" required="true" /></td></tr>
+		<tr><td colspan="2"><input type="submit" value="Calculate Distance" onclick="calcRoute()" /></td></tr>
+	</table>
+	<table>
+		<tr><td colspan="2" > Distance(By Road) (km):</td> </tr>
+        <tr><td colspan="2"> <p id="dista"></p></td></tr>
+		<tr><td colspan="2"> Distance(By Air) (km):</td></tr>
+        <tr><td colspan="2"> <p id="dis"  ></p></td></tr>
+	</table>
+	<p>
+		Disclaimer: Please Click Twice on the <br>
+		<b>Calculate Distance</b> button to get updated result.<br>
+		This is initial preview i'm working on it.<br>
+		<b>Sorry for Inconvenience.</b>
+	</p>
+	</div>
+    <div id="map_canvas" class="left"></div>
+	<footer class="bottom">
+		<p>Created by: Piyush Joshi, Version 1.0.0	</p>
+		<p>Contact information: <a href="mailto:call4piyush@gmail.com">call4piyush@gmail.com</a>.</p>
+		<p>Copyright &copy 2015 Piyush. All rights reserved.</p>
+	</footer>
+ </body>
+</html>
